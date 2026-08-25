@@ -1,0 +1,3 @@
+PySide6>=6.5
+pywin32>=305
+pyinstaller>=5.11

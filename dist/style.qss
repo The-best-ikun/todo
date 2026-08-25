@@ -1,0 +1,589 @@
+/* ========================================
+   Todo Manager - Modern Dark Theme
+   ======================================== */
+
+/* ---------- Main Window ---------- */
+QMainWindow {
+    background-color: #1e1e24;
+}
+
+QWidget#MainCentralWidget {
+    background-color: #1e1e24;
+}
+
+/* ---------- Header ---------- */
+QFrame#HeaderFrame {
+    background-color: #252530;
+    border-radius: 10px;
+    border: none;
+}
+
+QLabel#HeaderTitle {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+QLabel#StatsLabel {
+    color: #9aa0a6;
+    font-size: 12px;
+}
+
+/* ---------- Side Panel ---------- */
+QFrame#SidePanel {
+    background-color: #252530;
+    border-radius: 10px;
+    border: none;
+}
+
+QLabel#NavTitle {
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 4px 0;
+}
+
+QLabel#TipText {
+    color: #6b7280;
+    font-size: 11px;
+    line-height: 1.4;
+}
+
+QPushButton#NavButton {
+    background: transparent;
+    color: #d1d5db;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 12px;
+    text-align: left;
+    font-size: 13px;
+}
+
+QPushButton#NavButton:hover {
+    background-color: rgba(255, 255, 255, 0.06);
+    color: #ffffff;
+}
+
+QPushButton#NavButton[active="true"] {
+    background-color: rgba(79, 195, 247, 0.15);
+    color: #4fc3f7;
+}
+
+/* ---------- List Title ---------- */
+QLabel#ListTitle {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/* ---------- Main Todo List ---------- */
+QListWidget#MainTodoList {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 4px 0;
+    spacing: 6px;
+}
+
+QListWidget#MainTodoList::item {
+    border-radius: 10px;
+    padding: 2px;
+}
+
+QWidget.todo-item {
+    background-color: #2a2a35;
+    border-radius: 10px;
+    margin: 2px 0;
+}
+
+QWidget.todo-item:hover {
+    background-color: #333340;
+}
+
+QLabel.todo-title {
+    color: #f0f0f0;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+QLabel.todo-title[done="true"] {
+    color: #6b7280;
+}
+
+QLabel.todo-time {
+    color: #9aa0a6;
+    font-size: 12px;
+}
+
+QLabel.todo-time[done="true"] {
+    color: #6b7280;
+}
+
+QLabel.todo-time[pending="true"] {
+    color: #4fc3f7;
+}
+
+QLabel.todo-deadline {
+    color: #8a8f98;
+    font-size: 11px;
+    margin-left: 8px;
+}
+
+QLabel.todo-deadline[status="upcoming"] {
+    color: #4fc3f7;
+}
+
+QLabel.todo-deadline[status="soon"] {
+    color: #ffb74d;
+    font-weight: 600;
+}
+
+QLabel.todo-deadline[status="expired"] {
+    color: #ef5350;
+    font-weight: 600;
+}
+
+QLabel.todo-remind {
+    color: #ba68c8;
+    font-size: 11px;
+    margin-left: 8px;
+}
+QLabel.todo-remind[done="true"] {
+    color: #6b7280;
+}
+
+/* ---------- Empty State ---------- */
+QWidget#EmptyWidget {
+    background: transparent;
+}
+
+QLabel#EmptyText {
+    color: #9ca3af;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+QLabel#EmptyHint {
+    color: #6b7280;
+    font-size: 12px;
+}
+
+/* ---------- Desktop Card ---------- */
+QWidget#DesktopCard {
+    background: transparent;
+    border-radius: 15px;
+    color: #e6e6e6;
+    font-family: "Segoe UI", "Microsoft YaHei", Arial, sans-serif;
+    font-size: 12px;
+}
+
+QWidget#TopBar {
+    background: transparent;
+    padding: 4px 6px;
+}
+
+QLabel#TitleLabel {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* ---------- Settings Button ---------- */
+QPushButton#SettingsButton {
+    background: transparent;
+    color: #bfbfbf;
+    border: none;
+    border-radius: 8px;
+}
+QPushButton#SettingsButton:hover {
+    background: rgba(255, 255, 255, 0.08);
+    color: #ffffff;
+}
+
+/* ---------- Add Button ---------- */
+QPushButton#AddButton {
+    background: qlineargradient(
+        spread: pad, x1: 0, y1: 0, x2: 1, y2: 0,
+        stop: 0 rgba(79, 195, 247, 1),
+        stop: 1 rgba(41, 121, 255, 1)
+    );
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 13px;
+}
+QPushButton#AddButton:hover {
+    background: qlineargradient(
+        spread: pad, x1: 0, y1: 0, x2: 1, y2: 0,
+        stop: 0 rgba(100, 205, 249, 1),
+        stop: 1 rgba(64, 145, 255, 1)
+    );
+}
+QPushButton#AddButton:pressed {
+    background: qlineargradient(
+        spread: pad, x1: 0, y1: 0, x2: 1, y2: 0,
+        stop: 0 rgba(41, 121, 255, 1),
+        stop: 1 rgba(30, 100, 220, 1)
+    );
+}
+
+QPushButton#SmallAddButton {
+    background-color: rgba(79, 195, 247, 0.15);
+    color: #4fc3f7;
+    border: 1px solid rgba(79, 195, 247, 0.3);
+    padding: 6px 14px;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 12px;
+}
+QPushButton#SmallAddButton:hover {
+    background-color: rgba(79, 195, 247, 0.25);
+}
+
+/* ---------- List Widget (Card) ---------- */
+QListWidget#TodoList {
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 4px 2px;
+    spacing: 4px;
+}
+
+QListWidget#TodoList::item {
+    border-radius: 10px;
+    padding: 2px;
+}
+
+QWidget.todo-item[done="true"] {
+    opacity: 0.7;
+}
+
+/* ---------- Checkbox ---------- */
+QCheckBox {
+    spacing: 8px;
+    color: #dcdcdc;
+}
+QCheckBox::indicator {
+    width: 18px;
+    height: 18px;
+    border-radius: 5px;
+    border: 1.5px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.02);
+}
+QCheckBox::indicator:hover {
+    border-color: rgba(79, 195, 247, 0.6);
+}
+QCheckBox::indicator:checked {
+    background: qlineargradient(
+        spread: pad, x1: 0, y1: 0, x2: 1, y2: 1,
+        stop: 0 rgba(79, 195, 247, 1),
+        stop: 1 rgba(41, 121, 255, 1)
+    );
+    border: 1.5px solid rgba(79, 195, 247, 0.8);
+    image: none;
+}
+
+/* ---------- Status Bar ---------- */
+QStatusBar#MainStatusBar {
+    background-color: #191920;
+    color: #6b7280;
+    font-size: 11px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+QStatusBar#MainStatusBar QLabel {
+    color: #6b7280;
+    padding: 0 12px;
+}
+
+/* ---------- Toolbar ---------- */
+QToolBar {
+    background-color: #252530;
+    border: none;
+    spacing: 4px;
+    padding: 6px 10px;
+}
+
+QToolBar QToolButton {
+    background: transparent;
+    color: #d1d5db;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-size: 13px;
+}
+
+QToolBar QToolButton:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+    color: #ffffff;
+}
+
+QToolBar QToolButton:checked {
+    background-color: rgba(79, 195, 247, 0.2);
+    color: #4fc3f7;
+}
+
+QToolBar::separator {
+    background: rgba(255, 255, 255, 0.1);
+    width: 1px;
+    margin: 6px 4px;
+}
+
+/* ---------- Menu Bar ---------- */
+QMenuBar {
+    background-color: #252530;
+    color: #d1d5db;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 2px;
+}
+
+QMenuBar::item {
+    background: transparent;
+    padding: 6px 14px;
+    border-radius: 4px;
+}
+
+QMenuBar::item:selected {
+    background-color: rgba(255, 255, 255, 0.08);
+    color: #ffffff;
+}
+
+/* ---------- Dialogs ---------- */
+QDialog#SettingsDialog, QDialog#AddTodoDialog {
+    background-color: #1e1e24;
+    color: #e6e6e6;
+}
+
+QDialog#SettingsDialog QLabel, QDialog#AddTodoDialog QLabel {
+    color: #e6e6e6;
+}
+
+QGroupBox {
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    margin-top: 14px;
+    padding: 16px 14px 14px 14px;
+    font-weight: 600;
+    font-size: 13px;
+}
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    padding: 0 10px;
+    color: #4fc3f7;
+}
+
+/* ---------- Input Controls ---------- */
+QLineEdit, QTimeEdit, QSpinBox, QComboBox, QDateEdit {
+    background-color: #2a2a35;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    color: #e6e6e6;
+    padding: 7px 10px;
+    border-radius: 8px;
+    font-size: 12px;
+    selection-background-color: rgba(79, 195, 247, 0.4);
+}
+QLineEdit:focus, QTimeEdit:focus, QSpinBox:focus, QComboBox:focus, QDateEdit:focus {
+    border-color: rgba(79, 195, 247, 0.6);
+}
+QLineEdit:disabled, QTimeEdit:disabled, QSpinBox:disabled, QComboBox:disabled, QDateEdit:disabled {
+    background-color: #25252e;
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    color: #6b7280;
+}
+
+QDateEdit::drop-down {
+    border: none;
+    width: 20px;
+}
+QDateEdit QAbstractItemView {
+    background-color: #252530;
+    color: #e6e6e6;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    selection-background-color: rgba(79, 195, 247, 0.25);
+    selection-color: #4fc3f7;
+    outline: 0;
+}
+
+QCheckBox#DeadlineCheckbox {
+    color: #e6e6e6;
+    spacing: 8px;
+    font-size: 13px;
+}
+
+QComboBox::drop-down {
+    border: none;
+    width: 20px;
+}
+QComboBox QAbstractItemView {
+    background-color: #252530;
+    color: #e6e6e6;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    selection-background-color: rgba(79, 195, 247, 0.25);
+    selection-color: #4fc3f7;
+    outline: 0;
+}
+
+QSpinBox::up-button, QSpinBox::down-button {
+    background: transparent;
+    border: none;
+    width: 20px;
+}
+QSpinBox::up-button:hover, QSpinBox::down-button:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 4px;
+}
+
+QTimeEdit::up-button, QTimeEdit::down-button {
+    background: transparent;
+    border: none;
+    width: 18px;
+}
+QTimeEdit::up-button:hover, QTimeEdit::down-button:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 4px;
+}
+
+/* ---------- Dialog Buttons ---------- */
+QPushButton#DialogOkButton {
+    background: qlineargradient(
+        spread: pad, x1: 0, y1: 0, x2: 1, y2: 0,
+        stop: 0 rgba(79, 195, 247, 1),
+        stop: 1 rgba(41, 121, 255, 1)
+    );
+    color: white;
+    border: none;
+    padding: 8px 24px;
+    border-radius: 8px;
+    font-weight: 500;
+    min-width: 80px;
+}
+QPushButton#DialogOkButton:hover {
+    background: qlineargradient(
+        spread: pad, x1: 0, y1: 0, x2: 1, y2: 0,
+        stop: 0 rgba(100, 205, 249, 1),
+        stop: 1 rgba(64, 145, 255, 1)
+    );
+}
+
+QPushButton#DialogCancelButton {
+    background-color: #2a2a35;
+    color: #cccccc;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 8px 24px;
+    border-radius: 8px;
+    min-width: 80px;
+}
+QPushButton#DialogCancelButton:hover {
+    background-color: #333340;
+    color: #ffffff;
+}
+
+/* ---------- Menu ---------- */
+QMenu {
+    background-color: #252530;
+    color: #e6e6e6;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+    padding: 6px;
+}
+QMenu::item {
+    padding: 7px 24px;
+    border-radius: 5px;
+    min-width: 120px;
+}
+QMenu::item:selected {
+    background-color: rgba(79, 195, 247, 0.2);
+    color: #4fc3f7;
+}
+QMenu::item:checked {
+    background-color: rgba(79, 195, 247, 0.12);
+}
+QMenu::separator {
+    height: 1px;
+    background: rgba(255, 255, 255, 0.08);
+    margin: 4px 8px;
+}
+
+/* ---------- Message Box ---------- */
+QMessageBox {
+    background-color: #1e1e24;
+    color: #e6e6e6;
+}
+QMessageBox QLabel {
+    color: #e6e6e6;
+}
+QMessageBox QPushButton {
+    background-color: #2a2a35;
+    color: #e6e6e6;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 6px 20px;
+    border-radius: 6px;
+    min-width: 70px;
+}
+QMessageBox QPushButton:hover {
+    background-color: #333340;
+}
+QMessageBox QPushButton[buttonRole="acceptRole"] {
+    background: qlineargradient(
+        spread: pad, x1: 0, y1: 0, x2: 1, y2: 0,
+        stop: 0 rgba(79, 195, 247, 1),
+        stop: 1 rgba(41, 121, 255, 1)
+    );
+    color: white;
+    border: none;
+}
+
+/* ---------- Scrollbar ---------- */
+QListWidget#TodoList QScrollBar:vertical,
+QListWidget#MainTodoList QScrollBar:vertical {
+    background: transparent;
+    width: 6px;
+    margin: 2px;
+}
+QListWidget#TodoList QScrollBar::handle:vertical,
+QListWidget#MainTodoList QScrollBar::handle:vertical {
+    background: rgba(255, 255, 255, 0.18);
+    border-radius: 3px;
+    min-height: 30px;
+}
+QListWidget#TodoList QScrollBar::handle:vertical:hover,
+QListWidget#MainTodoList QScrollBar::handle:vertical:hover {
+    background: rgba(255, 255, 255, 0.28);
+}
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    height: 0;
+    background: transparent;
+}
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+    background: transparent;
+}
+
+/* ---------- Tooltip ---------- */
+QToolTip {
+    background-color: rgba(40, 40, 50, 0.95);
+    color: #e6e6e6;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 5px 8px;
+    border-radius: 6px;
+    font-size: 11px;
+}
+
+/* ---------- Menu Item (Checkable) ---------- */
+QMenu::item:checked {
+    background-color: rgba(79, 195, 247, 0.15);
+    color: #4fc3f7;
+}
+
+/* ---------- Line Edit ---------- */
+QLineEdit {
+    selection-background-color: rgba(79, 195, 247, 0.5);
+}
+
+/* ---------- Focus Outline ---------- */
+QPushButton:focus, QLineEdit:focus, QSpinBox:focus, QTimeEdit:focus {
+    outline: none;
+}

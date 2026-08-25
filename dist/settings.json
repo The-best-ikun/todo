@@ -1,0 +1,23 @@
+{
+  "check_interval_min": 1,
+  "window_geometry": {
+    "x": 1240,
+    "y": 80,
+    "w": 241,
+    "h": 281
+  },
+  "remind_before_min": 0,
+  "auto_start": false,
+  "card_visible": false,
+  "main_window_geometry": {
+    "x": 0,
+    "y": 23,
+    "w": 1920,
+    "h": 1009
+  },
+  "theme": "light",
+  "card_bg_mode": "glass",
+  "card_bg_image": "",
+  "card_bg_opacity": 88,
+  "card_glass_blur": 60
+}
