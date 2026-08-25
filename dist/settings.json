@@ -1,10 +1,10 @@
 {
   "check_interval_min": 1,
   "window_geometry": {
-    "x": 1240,
-    "y": 80,
-    "w": 241,
-    "h": 281
+    "x": 377,
+    "y": 282,
+    "w": 430,
+    "h": 462
   },
   "remind_before_min": 0,
   "auto_start": false,
